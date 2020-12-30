@@ -31,9 +31,26 @@
     pointer-events: none;
 }
 
+.rotatedText {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+
+  pointer-events: none;
+  fill: white;
+  font: bold 18px sans-serif;
+  transform: rotateZ(270deg)
+}
+
+
 .line {
   stroke:rgb(33, 60, 110);
-  stroke-width:2
+  stroke-width:2;
+  marker-end:url(#markerArrow)
 }
 
   .main {

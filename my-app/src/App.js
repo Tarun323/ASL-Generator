@@ -15,15 +15,15 @@ function MenuItem (props) {
 function App() {
   return (
     <div class="App">
-      <div class = "menu">
+      <div id ="menu" class = "menu">
         <div>
-          <MenuItem name = "State 1"/>
+          <MenuItem displayName = "PASS state" name = "PASS"/>
         </div>
         <div>
-          <MenuItem name ="State 2"/>
+          <MenuItem displayName ="DUMMY State" name = "SIMPLE"/>
         </div>
       </div>
-      <div class = "main" >
+      <div class = "main" id="main">
         <GraphBase/>
       </div>
     </div>
