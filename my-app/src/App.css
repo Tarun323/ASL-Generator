@@ -1,0 +1,83 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  }
+  svg { position:fixed; background-color:#FFFFE0}
+
+  .menu {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color:#96D1CD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .text-style {
+    font-size:28px;
+    color:blue;
+  }
+
+  .svgText {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+    pointer-events: none;
+}
+
+.rotatedText {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+
+  pointer-events: none;
+  fill: white;
+  font: bold 18px sans-serif;
+  transform: rotateZ(270deg)
+}
+
+
+.line {
+  stroke:rgb(33, 60, 110);
+  stroke-width:2;
+  marker-end:url(#markerArrow)
+}
+
+  .main {
+    width: 85%;
+    height: 100%;
+    float: right;
+    flex: 50%;    
+    background-color:#FFB695;
+  } 
+  
+  .menu-item {
+    flex-flow: column wrap;
+    flex-grow: 1;
+
+
+    order:1
+  }
+  .menu-item1 {
+    flex-direction: column;
+    flex-grow: 1;
+
+    flex-flow: column wrap;
+
+    order:2;
+  }
+  
+* {
+  box-sizing: border-box;
+}
+
